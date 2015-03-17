@@ -1,0 +1,104 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{graphicx}
+\usepackage[left=2.5cm,top=2.5cm,right=2cm,bottom=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,english,portuguese]{babel}
+\usepackage[bitstream-charter]{mathdesign}
+
+\newif\ifes
+\newif\ifen
+\newif\ifpt
+\newif\ifintro
+
+
+\introfalse % true if you want the introductory page
+% \introtrue
+\begin{document}
+
+\include{local/header}
+
+\ifintro
+\begin{center}
+{\Large\bf 
+  the Latin American Giant Observatory (LAGO) Collaboration\\
+  \vspace*{0.7cm}
+  \datesign
+}
+\end{center}
+\vspace*{1.5cm}
+
+The attached Memoranda of Understanding describe the commitments by members of
+the signing institutions to the LAGO Project. The purpose of the LAGO project
+is the design, installation, commissioning and operation of the Latin American Giant
+Observatory, an extended cosmic ray observatory composed by single or small
+arrays of particle detectors at global scale. Its main scientific objectives
+are oriented to basic astroparticle research on three branches: the Extreme Universe, Space
+Weather phenomena, and Atmospheric Radiation at ground level.
+
+Through these documents, the members listed in the attached Memoranda of
+Understanding constitute the LAGO Collaboration and manifest their commitment
+to build and operate the LAGO project, the analysis of its data,
+and the funding of these activities through the relevant funding agencies.
+
+\vspace*{1cm}\begin{center}\noindent\rule{0.9\textwidth}{0.4pt}\end{center}\vspace*{1cm}
+
+\begin{center}
+{\Large\bf 
+  la Colaboración Latin American Giant Observatory (LAGO)\\
+  \vspace*{0.7cm}
+  \datesign
+}
+\end{center}
+\vspace*{1.5cm}
+
+Los Memorándums de Entendimiento adjuntos describen los compromisos de los
+miembros de las instituciones participantes en el Proyecto LAGO. El objetivo
+del proyecto LAGO es el diseño, la construcción, la puesta en servicio y la
+operación del Observatorio Gigante Latinoamericano (LAGO, por sus siglas en
+inglés), un observatorio de rayos cósmicos extendido compuesto compuesto por
+detectores de partículas individuales o formando pequeños arreglos a escala
+global. Sus principales objetivos científicos se orientan a la investigación
+básica en Astropartículas en tres ramas: el Universo Extremo, fenómenos de
+Meteorología y Climatología Espacial, y Radiación Atmosférica a nivel del
+suelo. 
+
+Por medio de estos documentos, los miembros que se detallan en los Memorándums
+de Entendimiento anexos consituyen la Colaboración LAGO y expresan su
+compromiso a la construcción y operación del proyecto LAGO, el análisis de sus
+datos y la financiación de estas actividades a través de las agencias de
+financiamiento relevantes.
+
+%% FALTA EN PORTUGUES
+
+\fi
+
+% Spanish
+\selectlanguage{spanish}
+\estrue
+\enfalse
+\ptfalse
+\def \country{\countryes}
+\setcounter{secnumdepth}{10}
+\input{mou-es}
+
+% English
+\newpage
+\selectlanguage{english}
+\esfalse
+\entrue
+\ptfalse
+\def \country{\countryen}
+\setcounter{section}{0}
+\input{mou-en}
+
+% Portuguese
+% \nepage
+% \selectlanguage{portuguese}
+% \esfalse
+% \enfalse
+% \pttrue
+% \def \country{\countrypt}
+% \setcounter{section}{0}
+% \input{mou-pt}
+\end{document}
