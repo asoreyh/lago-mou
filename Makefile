@@ -6,4 +6,4 @@ all:
 	pdflatex ${name}.tex
 
 clean:
-	rm -f *.log *.aux ${name}.pdf
+	rm -f *.log *.aux local/*.aux ${name}.pdf

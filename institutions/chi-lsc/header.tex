@@ -2,6 +2,8 @@
 \newif\ifcrg
 \newif\ifpig
 \newif\ifirg
+\newif\ifilg
+\newif\ifil
 
 %%%% SET LAGO PI HERE
 \def\lagopi{Dr.~Ibrahim Daniel Torres Aguilar}
@@ -11,8 +13,15 @@
 %%%% SET INSTITUTION HERE
 \def\institution{Universidad de La Serena}
 
+%% LEGAL INSTITUTION REPRESENTATIVE
+\def\instlegalrep{Dr.~Nibaldo Avilés}
+\iltrue % include legal representative
+%\ilfalse % not include legal representative
+\ilgtrue % male
+%\ilgfalse % female 
+
 %%%% INSTITUTION REPRESENTATIVE 
-\def\instrep{Dr.~Pedro Osvaldo Vega Jorquera}
+\def\instrep{Dr.~Pedro Vega}
 \irgtrue % male
 %\irgfalse % female 
 
@@ -24,7 +33,7 @@
 %%%% SET YOUR COUNTRY HERE
 \def\countryes{Chile}
 \def\countryen{Chile}
-\def\countrypt{}
+\def\countrypt{Chile}
 
 %%%% DATE SIGNED
 \def\datesignes{03 de Marzo de 2017}
