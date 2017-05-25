@@ -4,8 +4,9 @@ This is a set of macros in LaTeX to compile and build different versions of the 
 
 #### USAGE ####
 
-1. Copy the directory: **cp -r institutions/base institutions/___country-institution___**
-2. Make a symbolic link: **ln -s institutions/country-institution local**
+1. Define this two variables: ctr=_three-letter-country_ and ins=_three-letter-institution_ 
+2. Copy the directory: **cp -r institutions/base institutions/${ctr}-${ins}**
+2. Make a symbolic link: **ln -s institutions/${ctr}-${ins} local**
 3. Edit and complete all the files in local: **cd local**
 4. When done, back to the main directory: **cd ..**
 5. And **make**
